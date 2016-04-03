@@ -5,4 +5,11 @@ require_once 'autoload.php';
 use App\Bootstrap;
 use App\Request;
 
-Bootstrap::run(new Request);
+try
+{
+    Bootstrap::run(new Request);
+}
+catch (\Exception $e)
+{
+    echo '<strong>' . $e->getMessage() . '</strong>';
+}

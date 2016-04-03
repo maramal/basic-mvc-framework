@@ -40,10 +40,5 @@ class Bootstrap
                 ));
             }
         }
-        else
-        {
-            throw new \Exception ("Error 404: No encontrado");
-            
-        }
     }
 }
